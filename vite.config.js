@@ -4,7 +4,15 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-   preview: {
-      allowedHosts: ['https://trustwebsite-l1ir.onrender.com/'], // ✅ add your Render domain here
-    },
+    server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000,
+    allowedHosts: ['trustwebsite-l1ir.onrender.com'],
+  },
+
+  preview: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000,
+    allowedHosts: ['trustwebsite-l1ir.onrender.com'],
+  },
 })
