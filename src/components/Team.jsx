@@ -13,7 +13,7 @@ import Sanjiv from "../images/sanjiv.jpeg";
 import Anima from "../images/anima.jpeg";
 import sukomal from "../images/sukumol.jpeg";
 import deb from "../images/deb.jpeg";
-import debraj from "../images/debraj.jpeg";
+import debraj from "../images/Debraj.jpeg";
 import paria from "../images/paria.jpeg";
 
 const Team = () => {
