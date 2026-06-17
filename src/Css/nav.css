@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #0f4c75; */
   padding: 15px 40px;
   color: black;
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: #fff;
 }
-.donate-btn{
+
+/* Buttons */
+.donate-btn {
   background-color: #169250;
   color: rgb(228, 228, 228);
   border: none;
@@ -20,10 +22,12 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.donate-btn:hover{
+
+.donate-btn:hover {
   background-color: #155032;
 }
-.member-btn{
+
+.member-btn {
   background-color: #f8df02;
   color: rgb(5, 5, 5);
   border: none;
@@ -34,18 +38,34 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.member-btn:hover{
+
+.member-btn:hover {
   background-color: #a0990e;
 }
+
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15px;
 }
 
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #060606;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 25px;
 }
 
@@ -55,38 +75,146 @@
   font-weight: 600;
   transition: 0.3s;
   font-size: 20px;
-  margin-top: 2%;
 }
 
 .nav-links a:hover {
   color: #00b7c2;
 }
 
+/* Hamburger */
 .menu-icon {
   display: none;
   font-size: 32px;
   cursor: pointer;
 }
 
-/* Responsive */
+/* =======================
+   Tablet (1024px)
+======================= */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-img {
+    height: 70px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .member-btn,
+  .donate-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* =======================
+   Mobile (768px)
+======================= */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 1001;
+  }
+
+  .logo-img {
+    height: 55px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
   .nav-links {
     position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #77bbe9;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background: #205d87;
     flex-direction: column;
-    width: 200px;
-    padding: 20px;
+    align-items: center;
+    gap: 15px;
+   
+    padding: 20px 0;
+
     display: none;
-    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
 
   .nav-links.active {
     display: flex;
   }
 
+  .nav-links a {
+    font-size: 18px;
+    margin-top: 0;
+     color: #fff;
+  }
+
+  .member-btn,
+  .donate-btn {
+    width: 90%;
+    max-width: 250px;
+    font-size: 16px;
+  }
+}
+
+/* =======================
+   Small Mobile (480px)
+======================= */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    gap: 6px;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+
   .menu-icon {
-    display: block;
+    font-size: 28px;
+  }
+
+  .nav-links {
+    top: 70px;
+    
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .member-btn,
+  .donate-btn {
+    font-size: 14px;
+    padding: 10px;
   }
 }

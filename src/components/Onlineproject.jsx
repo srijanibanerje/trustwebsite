@@ -1,11 +1,11 @@
 import React from "react";
 import "../Css/onlineproject.css";
 
-import project1 from "../images/banner2.jpg";
-import project2 from "../images/banner2.jpg";
-import project3 from "../images/banner2.jpg";
-import project4 from "../images/banner2.jpg";
-import project5 from "../images/banner2.jpg";
+import project1 from "../images/p1.jpeg";
+import project2 from "../images/pj2.jpeg";
+import project3 from "../images/pj6.jpeg";
+import project4 from "../images/pj5.jpeg";
+
 
 const Onlineproject = () => {
   const projects = [
@@ -24,6 +24,7 @@ const Onlineproject = () => {
     {
       id: 3,
       title: "Women Empowerment",
+      
       image: project3,
       desc: "Skill development programs and online workshops for women to build independent career.",
     },
@@ -44,7 +45,7 @@ const Onlineproject = () => {
   
   return (
     <div className="project-section" style={{backgroundColor:"#f9f9f9"}}>
-      <h2 className="project-heading">Our Online Projects</h2>
+      <h2 className="project-heading">Hope in Action</h2>
 
       <div className="project-container">
         {projects.map((project) => (
@@ -53,7 +54,7 @@ const Onlineproject = () => {
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
-              <button className="project-btn">Learn More</button>
+              {/* <button className="project-btn">Learn More</button> */}
             </div>
           </div>
         ))}

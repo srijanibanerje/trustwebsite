@@ -1,0 +1,108 @@
+.member-container {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.member-card {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.member-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.member-header h1 {
+  font-size: 38px;
+  color: #0d3b66;
+  margin-bottom: 10px;
+}
+
+.member-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.member-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #0d6efd;
+}
+
+.submit-btn {
+  grid-column: span 2;
+  padding: 15px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0b5ed7;
+}
+
+@media (max-width: 768px) {
+  .member-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width,
+  .submit-btn {
+    grid-column: span 1;
+  }
+
+  .member-card {
+    padding: 25px;
+  }
+
+  .member-header h1 {
+    font-size: 30px;
+  }
+}

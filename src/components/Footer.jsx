@@ -26,10 +26,10 @@ const Footer = () => {
 
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/">About Us</a></li>
-              <li><a href="/">Projects</a></li>
-              <li><a href="/">Gallery</a></li>
-              <li><a href="/">Contact</a></li>
+              <li><a href="/aboutus">About Us</a></li>
+              {/* <li><a href="/">Projects</a></li> */}
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
 
@@ -39,8 +39,8 @@ const Footer = () => {
 
             <ul className="footer-links">
               <li>Free Education</li>
-              <li>Medical Camps</li>
-              <li>Food Distribution</li>
+              {/* <li>Medical Camps</li>
+              <li>Food Distribution</li> */}
               <li>Women Empowerment</li>
               <li>Old Age Support</li>
             </ul>
@@ -50,9 +50,9 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6">
             <h5 className="footer-title">Contact Us</h5>
 
-            <p><i className="fa fa-map-marker me-2"></i>Kolkata, West Bengal</p>
-            <p><i className="fa fa-phone me-2"></i>+91 98765 43210</p>
-            <p><i className="fa fa-envelope me-2"></i>info@hopecharity.org</p>
+            <p><i className="fa fa-map-marker me-2"></i>Serampore, West Bengal</p>
+            <p><i className="fa fa-phone me-2"></i>+91 8697747566</p>
+            <p><i className="fa fa-envelope me-2"></i>hopeandhumanitytrust@gmail.com</p>
 
             {/* <div className="footer-social">
               <a href="/"><i className="fa fa-facebook"></i></a>

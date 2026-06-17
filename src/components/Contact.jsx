@@ -4,6 +4,8 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedinIn,
+  FaAddressBook,
+  FaPhoneAlt,
 } from 'react-icons/fa'
 
 const Contact = () => {
@@ -29,7 +31,7 @@ const Contact = () => {
             style={{
               fontSize: '42px',
               marginBottom: '20px',
-              color: '#222',
+              color: '#2896ea',
             }}
           >
             Contact Us
@@ -56,6 +58,39 @@ const Contact = () => {
               gap: '20px',
             }}
           >
+           <div
+              style={{
+                background: '#fff',
+                padding: '25px',
+                borderRadius: '12px',
+                textAlign: 'center',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+              }}
+            >
+              <FaAddressBook size={28} color="#1877F2" />
+              <h3 style={{ marginTop: '15px', color: '#222' }}>Address</h3>
+              <p style={{ fontSize: '14px', color: '#666' }}>
+               Annapurna Bhaban, Arabinda Park, Sardar Para, P.S Serampore,
+               Hoogly-712223
+              </p>
+            </div>
+              <div
+              style={{
+                background: '#fff',
+                padding: '25px',
+                borderRadius: '12px',
+                textAlign: 'center',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
+              }}
+            >
+              <FaPhoneAlt size={28} color="#1877F2" />
+              <h3 style={{ marginTop: '15px', color: '#222' }}>Phone</h3>
+              <p style={{ fontSize: '14px', color: '#666' }}>
+                +91 8697747566<br />
+                +91 7003097947
+              </p>
+            </div>
+            
             {/* Facebook */}
             <div
               style={{
@@ -91,7 +126,7 @@ const Contact = () => {
             </div>
 
             {/* Twitter */}
-            <div
+            {/* <div
               style={{
                 background: '#fff',
                 padding: '25px',
@@ -105,7 +140,7 @@ const Contact = () => {
               <p style={{ fontSize: '14px', color: '#666' }}>
                 Stay connected with our latest announcements.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Extra Social */}
@@ -137,7 +172,7 @@ const Contact = () => {
           >
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.846353028348!2d88.363895!3d22.572646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a5e0e1b8f9%3A0x8c4f8e9f8f5b5c0f!2sKolkata!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117784.90241754125!2d88.25467147837765!3d22.69929927906505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8851b11ff9691%3A0xea4cbb9bdd0c5d8c!2sANNYAPURNA%20BHABAN%20LODGE!5e0!3m2!1sen!2sin!4v1781162240403!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
