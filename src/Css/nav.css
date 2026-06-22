@@ -48,11 +48,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: nowrap; /* নিচে নামতে দেবে না */
 }
 
 .logo-img {
   height: 100px;
   width: auto;
+  flex-shrink: 0;
 }
 
 .logo-text {
@@ -60,6 +62,30 @@
   font-weight: 900;
   color: #060606;
   letter-spacing: 1px;
+  white-space: nowrap; /* text এক লাইনে রাখবে */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 70px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logo-img {
+    height: 55px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 }
 
 /* Nav Links */
