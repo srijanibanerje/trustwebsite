@@ -9,6 +9,7 @@ import Teammember from './components/Teammember';
 import Aboutus from './components/Aboutus';
 import MembershipForm from './components/MembershipForm';
 import Gallery from "./components/Gallery";
+import Donateform from './components/Donateform';
 function App() {
  
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/teammember" element={<Userlayout><Teammember /></Userlayout>} />
         <Route path="/membershipform" element={<Userlayout><MembershipForm /></Userlayout>} />
         <Route path="/gallery" element={<Userlayout><Gallery /></Userlayout>} />
+        <Route path="/donateform" element={<Userlayout><Donateform /></Userlayout>} />
       </Routes>
     </Router>
     </>

@@ -1,4 +1,7 @@
+
 import React, { useState } from "react";
+import axios from "axios";
+import logo from "../images/logo_final.png";
 
 const MembershipForm = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +28,7 @@ const MembershipForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!formData.declaration) {
@@ -33,8 +36,38 @@ const MembershipForm = () => {
       return;
     }
 
-    console.log(formData);
-    alert("Form Submitted Successfully!");
+    try {
+      const { data } = await axios.post(
+        "http://localhost:5000/api/membership/create",
+        formData
+      );
+
+      if (data.success) {
+        alert(data.message);
+
+        setFormData({
+          applicantName: "",
+          fatherName: "",
+          dob: "",
+          age: "",
+          gender: "",
+          occupation: "",
+          address: "",
+          mobile: "",
+          email: "",
+          aadhaar: "",
+          membershipType: "",
+          declaration: false,
+        });
+      }
+    } catch (error) {
+      console.error(error);
+
+      alert(
+        error.response?.data?.message ||
+          "Membership Application Submission Failed"
+      );
+    }
   };
 
   return (
@@ -43,14 +76,17 @@ const MembershipForm = () => {
         className="card shadow p-4"
         style={{ maxWidth: "900px", margin: "auto" }}
       >
-      
-        <h2 className="text-center fw-bold" style={{ color: "#007bff" }}>
-          HOPE & HUMANITY TRUST
-        </h2>
+        <div className="header">
+          <img src={logo} alt="logo" className="logoform" />
 
-        <p className="text-center mb-4">
-          <strong>APPLICATION FOR MEMBERSHIP</strong>
-        </p>
+          <div className="header-content">
+            <h1>HOPE & HUMANITY TRUST</h1>
+            <h4>Govt. Reg. No. IV-190101151/2025</h4>
+            <p>(A Public Charitable Trust)</p>
+          </div>
+        </div>
+
+        <h2 className="form-title">APPLICATION FOR MEMBERSHIP</h2>
 
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -109,6 +145,7 @@ const MembershipForm = () => {
                   type="radio"
                   name="gender"
                   value="Male"
+                  checked={formData.gender === "Male"}
                   onChange={handleChange}
                 />{" "}
                 Male
@@ -119,6 +156,7 @@ const MembershipForm = () => {
                   type="radio"
                   name="gender"
                   value="Female"
+                  checked={formData.gender === "Female"}
                   onChange={handleChange}
                 />{" "}
                 Female
@@ -129,6 +167,7 @@ const MembershipForm = () => {
                   type="radio"
                   name="gender"
                   value="Other"
+                  checked={formData.gender === "Other"}
                   onChange={handleChange}
                 />{" "}
                 Other
@@ -200,6 +239,9 @@ const MembershipForm = () => {
                 type="radio"
                 name="membershipType"
                 value="General Member"
+                checked={
+                  formData.membershipType === "General Member"
+                }
                 onChange={handleChange}
               />{" "}
               General Member
@@ -210,6 +252,9 @@ const MembershipForm = () => {
                 type="radio"
                 name="membershipType"
                 value="Life Member"
+                checked={
+                  formData.membershipType === "Life Member"
+                }
                 onChange={handleChange}
               />{" "}
               Life Member
@@ -220,6 +265,9 @@ const MembershipForm = () => {
                 type="radio"
                 name="membershipType"
                 value="Volunteer Member"
+                checked={
+                  formData.membershipType === "Volunteer Member"
+                }
                 onChange={handleChange}
               />{" "}
               Volunteer Member
@@ -249,7 +297,10 @@ const MembershipForm = () => {
           </div>
 
           <div className="text-center">
-            <button type="submit" className="btn btn-primary px-5">
+            <button
+              type="submit"
+              className="btn btn-success px-5 py-2"
+            >
               Submit
             </button>
           </div>

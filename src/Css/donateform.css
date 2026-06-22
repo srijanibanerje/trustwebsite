@@ -1,0 +1,258 @@
+
+.donation-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.logoform {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.header-content {
+  flex: 1;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  color: #0b4f2f;
+  margin-bottom: 5px;
+}
+
+.header-content h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.header-content p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 3px;
+}
+
+/* ================= TITLE ================= */
+
+.form-title {
+  text-align: center;
+  margin: 25px 0;
+  color: #0b4f2f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ================= BODY ================= */
+
+.form-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.qr-section {
+  width: 250px;
+  text-align: center;
+}
+
+.qr-section h4 {
+  margin-bottom: 15px;
+  color: #0b4f2f;
+}
+
+.qr-image {
+  width: 220px;
+  max-width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fff;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #0b4f2f;
+  box-shadow: 0 0 0 3px rgba(11, 79, 47, 0.15);
+}
+
+/* ================= SECTION HEADING ================= */
+
+.left-section h3 {
+  margin: 25px 0 15px;
+  color: #0b4f2f;
+  border-left: 5px solid #0b4f2f;
+  padding-left: 10px;
+}
+
+/* ================= BUTTON ================= */
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #0b4f2f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #083d25;
+  transform: translateY(-2px);
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .form-body {
+    gap: 25px;
+  }
+
+  .qr-section {
+    width: 200px;
+  }
+
+  .qr-image {
+    width: 180px;
+  }
+
+  .header-content h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .donation-container {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .form-body {
+    flex-direction: column-reverse;
+  }
+
+  .qr-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .qr-image {
+    width: 220px;
+  }
+
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .donation-container {
+    width: 98%;
+    padding: 15px;
+  }
+
+  .header-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .header-content h4 {
+    font-size: 0.9rem;
+  }
+
+  .header-content p {
+    font-size: 0.8rem;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .qr-image {
+    width: 180px;
+  }
+}

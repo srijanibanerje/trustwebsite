@@ -42,7 +42,9 @@ const Banner = () => {
         <button className="banner-btn" onClick={() => navigate('/membershipform')}>
             Be a Member
           </button>
-          <button className="banner-btn">Donate Now</button>
+          <button className="banner-btn" onClick={() => navigate('/donateform')}>
+            Donate Now
+          </button>
         </div>
       </div>
 
