@@ -22,7 +22,7 @@ const Team = () => {
     {
       name: "Mr Bhuban Pramanick",
       role: "Chairman",
-      details:"Home and Humanity Trust, Serampore Chaired by Mr. Bhuban Pramanick, a two-time sitting MLA from the Balagarh constituency, the Trust is dedicated to community welfare and social upliftment. Known for his grassroots social work, Mr. Pramanick remains available 24/7 to support those in need. Under his leadership, the Trust actively engages in initiatives such as education support, healthcare access, and assistance for underprivileged families and children across Serampore.",
+      details:"Hope and Humanity Trust, Serampore Chaired by Mr. Bhuban Pramanick, a two-time sitting MLA from the Balagarh constituency, the Trust is dedicated to community welfare and social upliftment. Known for his grassroots social work, Mr. Pramanick remains available 24/7 to support those in need. Under his leadership, the Trust actively engages in initiatives such as education support, healthcare access, and assistance for underprivileged families and children across Serampore.",
       img: [Bhuban],
     },
      {
