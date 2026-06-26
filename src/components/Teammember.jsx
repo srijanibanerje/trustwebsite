@@ -37,9 +37,9 @@ const Teammember = () => {
           img: [deb],
         },
         {
-          name: "Debabrata Banerjee",
+          name: "Debobrata Banerjee",
           role: "Member & Office Manager",
-          details: "Debabrata Banerjee, also known affectionately as Tinku, is a soft-spoken entrepreneur who serves as Office Administrator of the Trust. Known for his reliability, sense of responsibility, and commitment to social work, he is a kind-hearted individual with a deep love for nature, especially plants. He is also an avid collector of rare coins. Demonstrating his dedication, he has voluntarily offered his premises for the Trust’s use until a new office is established.",
+          details: "Debobrata Banerjee, also known affectionately as Tinku, is a soft-spoken entrepreneur who serves as Office Administrator of the Trust. Known for his reliability, sense of responsibility, and commitment to social work, he is a kind-hearted individual with a deep love for nature, especially plants. He is also an avid collector of rare coins. Demonstrating his dedication, he has voluntarily offered his premises for the Trust’s use until a new office is established.",
           img: [deba],
         },
          {
