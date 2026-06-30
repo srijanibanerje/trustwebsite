@@ -54,8 +54,6 @@ const Teammember = () => {
           details: "Ranjan Basu is a businessman known for his strong networking skills and commitment to helping others. Widely respected for supporting people as they build their careers, he also organizes social camps and takes an active role in community initiatives. He currently serves as a Member of the Trust. ",
           img: [ranjan],
         },
-        
-       
         {
           name: "Mrs Anima Nath",
           role: "Member",

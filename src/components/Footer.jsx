@@ -9,7 +9,7 @@ const Footer = () => {
 
           {/* About */}
           <div className="col-lg-4 col-md-6">
-            <h2 className="footer-logo">Hope Charitable Trust</h2>
+            <h2 className="footer-logo">Hope & Humanity Trust</h2>
 
             <p className="footer-text">
               Dedicated to helping people through education, healthcare,
